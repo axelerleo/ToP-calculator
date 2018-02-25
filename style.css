@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: url("table.jpg") no-repeat fixed center; 
+    background-size: cover;
+}
+
+.calculator-body {
+    
+    border: 4px rgb(112, 112, 112) solid;
+    background-image: linear-gradient(to bottom right, rgb(179, 179, 179),rgb(112, 112, 112));
+
+    background-color: rgb(156, 156, 156);
+    margin: auto;
+    margin-top: 150px;
+    width: 380px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 7px 10px 4px rgba(120, 120, 120, 0.7);
+    height: 440px;
+
+}
+
+.buttons {
+    position: relative;
+    margin: 5px 0px 5px 15px;
+    height: 280px;
+    width: 380px;
+}
+
+.clicked {
+  transform: scale(0.95);
+  transition-duration: .05s;
+}
+
+.myBtn {
+    height: 16%;
+    width: 19%;
+    margin: 5px;
+
+    border-radius:10px;
+    background-color: #3a3a3a;
+    font-size: 25px;
+    color: white;
+    border-color: white;
+    border-top: none;
+    border-bottom: none;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.68), inset -1px -6px 12px 0.1px #89847e;
+    font-family: 'Advent Pro', sans-serif;
+s
+}
+
+.myBtn:hover {
+  cursor: pointer;
+}
+
+.zero {
+    width: 42%;
+}
+
+.equal {
+    height: 100px;
+    position: absolute;
+    margin-left: 11px;
+}
+
+.red{
+    background-color: crimson;
+}
+
+.screen {
+    border: 1px #888686 solid;
+    padding: 5px;
+    height: 90px;
+    width: 90%;
+    background-color: rgb(223,223,223);
+    border-radius: 8px;
+    border-right: black;
+    margin: auto;
+    border-left: black;
+}
+
+.formula {
+    margin-top: -19px;
+    float: right;
+    color: gray;
+    font-family: 'VT323', monospace;
+
+}
+
