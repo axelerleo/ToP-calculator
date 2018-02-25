@@ -127,6 +127,11 @@ function calculate(string) {
 // operationObject.operators holds operators in right order
 function getOperationObj(string) {
 
+  //fix for negatives
+  if(string.charAt(0)=="-"){
+  	string = "0" + string;
+  }
+
   string = string.split("");
 
   let operationObj = string.reduce((obj, char) => {
